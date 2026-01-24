@@ -1,0 +1,11 @@
+# Dataset
+crime.csv
+*.csv
+
+# Generated files
+*.faiss
+*.pkl
+
+# Python Cache (You uploaded these, but you should ignore them!)
+__pycache__/
+*.pyc
