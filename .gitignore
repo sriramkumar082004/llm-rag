@@ -9,3 +9,7 @@ crime.csv
 # Python Cache (You uploaded these, but you should ignore them!)
 __pycache__/
 *.pyc
+
+# Environment variables
+.env
+
