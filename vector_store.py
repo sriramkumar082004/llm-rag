@@ -8,10 +8,10 @@ try:
     index = faiss.read_index(INDEX_FILE)
     with open("crime_texts.pkl", "rb") as f:
         texts = pickle.load(f)
-    print(f"✅ Loaded FAISS index with {index.ntotal} vectors")
+    print(f"[OK] Loaded FAISS index with {index.ntotal} vectors")
 except FileNotFoundError:
-    print("❌ Index files not found!")
-    print("🔨 Please run: python build_index.py")
+    print("[ERROR] Index files not found!")
+    print("[INFO] Please run: python build_index.py")
     raise
 
 
