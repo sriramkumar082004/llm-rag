@@ -30,9 +30,9 @@ def ask(question: str):
     answer, source_type = route_question(question)
 
     # 3️⃣ Cache the result with appropriate TTL
-    # student: 10 min | web: 5 min | rag: 30 min | general: 15 min
-    cache_ttl = {"student": 600, "web": 300, "rag": 1800, "general": 900}.get(
-        source_type, 1800
+    # student: 10 min | web: 5 min | rag: 3 min | general: 15 min
+    cache_ttl = {"student": 600, "web": 300, "rag": 180, "general": 900}.get(
+        source_type, 180
     )
 
     redis_client.setex(question, cache_ttl, answer)
