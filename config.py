@@ -29,4 +29,4 @@ MODEL_NAME = "phi3"
 INDEX_FILE = "crime_index.faiss"
 
 # Redis Cache TTL (in seconds)
-CACHE_TTL = 1800  # 30 minutes
+CACHE_TTL = 180  # 3 minutes
